@@ -1,0 +1,65 @@
+<!DOCTYPE html> <html> <head> <meta charset="utf-8"> <style type="text/css"> .preasy-slide{box-sizing: border-box;} .preasy-slide:not(:target){display: none;} </style>
+<link href='css/font-league-gothic.css' rel='stylesheet' type='text/css' />
+<link href='css/preasy.css' rel='stylesheet' type='text/css' />
+</head><body>
+<div class='preasy-slide' id='1'>
+<h1 id="preasy">PREASY</h1>
+
+<h2 id="easy-html-presentation">Easy HTML presentation</h2>
+
+<ul>
+  <li>One markdown file per slide</li>
+  <li>Customized with CSS / JavaScript</li>
+  <li>Keyboard support for slide switching
+    <ul>
+      <li><code>&rarr;</code> key moves forward</li>
+      <li><code>&larr;</code> key moves backward</li>
+    </ul>
+  </li>
+</ul>
+</div>
+<div class='preasy-slide' id='2'>
+<h1 id="organise-your-presentation-folder">Organise your presentation folder</h1>
+
+<ul>
+  <li><code>css/</code>: CSS file(s) to link with your HTML page</li>
+  <li><code>js/</code>: JavaScript file(s) to link with your HTML page</li>
+  <li><code>res/</code>: Ressources used by slides (e.g. pictures)</li>
+  <li><code>slides/</code>: One markdown file per slide</li>
+</ul>
+</div>
+<div class='preasy-slide' id='3'>
+<pre><code><b>.:</b>
+css  res  slides
+
+<b>./css:</b>
+font-league-gothic.css preasy.css
+
+<b>./res:</b>
+font-league-gothic  preasy-screenshot.png
+
+<b>./res/font-league-gothic:</b>
+leaguegothic-regular-webfont.eot  leaguegothic-regular-webfont.ttf
+leaguegothic-regular-webfont.svg  leaguegothic-regular-webfont.woff
+
+<b>./slides:</b>
+01.md  02.md  03.md  04.md  05.md  06.md</code></pre>
+</div>
+<div class='preasy-slide' id='4'>
+<h1 id="build-you-presentation">Build you presentation</h1>
+
+<h1 id="preasy-build"><code>preasy build</code></h1>
+</div>
+<div class='preasy-slide' id='5'>
+<h1 id="open-buildindexhtml">Open <code>_build/index.html</code></h1>
+
+<p><img src="res/preasy-screenshot.png" alt="Preasy screenshot" /></p>
+</div>
+<div class='preasy-slide' id='6'>
+<h1 id="sources">Sources</h1>
+
+<p>Browse sources of this presentation on
+<a href="https://github.com/sagotch/preasy/tree/gh-pages/src">github</a>.</p>
+</div>
+<script> (function(){ var slides=document.getElementsByClassName("preasy-slide"); var index=0;window.onkeydown= function(k){switch(k.keyCode) {case 33:case 37: if(index>0){window.location.hash="#"+slides[--index].id;}break; case 38:break; case 34:case 39: if(index<slides.length-1){ window.location.hash="#"+slides[++index].id;}break; case 40:break;}}; window.location.hash="#"+slides[0].id;})(); </script>
+</body></html>

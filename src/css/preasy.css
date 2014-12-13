@@ -1,0 +1,69 @@
+body
+{
+    background-color: #FFFFFF;
+
+    position: fixed;
+    top: 0 ;
+    bottom: 0;
+    left: 0 ;
+    right: 0 ;
+    overflow: hidden ;
+
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column ;
+    justify-content: center ;
+    align-items: center ;
+
+    text-align: center ;
+    font-family: Garamond, Georgia, serif ;
+    font-size: 2rem ;
+}
+
+h1,h2,h3,h4,h5,h6
+{
+    font-family: 'League Gothic', sans-serif ;
+    text-transform: uppercase ;
+}
+
+h1 code
+{
+    text-transform: none ;
+}
+
+ul
+{
+    text-align: left ;
+    list-style: square ;
+}
+
+li
+{
+    margin-top: 0.5rem ;
+}
+
+pre
+{
+    text-align: left ;
+    padding: 2rem ;
+    display: inline-block ;
+}
+
+code, pre
+{
+    background-color: #CCCCCC ;
+}
+
+h1 code
+{
+    padding: 1rem ;
+}
+
+img
+{
+    max-height: 600px;
+    max-width: 800px;
+    border: 1px solid black ;
+}
